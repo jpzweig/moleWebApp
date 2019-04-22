@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>moleculeDB</title>
+</head>
+<body>
+<center>
+    <h1>
+        <div>Select a Molecule File (txt)</div>
+        <div>It should be of the following form:</div>
+    </h1>
+        <div>[MOLECULE NAME]</div>
+        <div>[# OF VERTICES]</div>
+        <div>[LABEL OF VERTEX ID 0]</div>
+        <div>[LABEL OF VERTEX ID 1]</div>
+        <div>[LABEL OF VERTEX ID 2]</div>
+        <div>...</div>
+        <div>[LABEL OF VERTEX ID V]</div>
+
+    <form method="post" action="AddingMole">
+        <br>
+            <input type="file" name="myFile" multiple>
+        <br><br>
+        <input type="submit" value="Upload_Molecule">
+    </form>
+    <?php
+        move_uploaded_file ( string myFile , string /Users/jacobzweig/IdeaProjects/molWebApp ) : bool
+    ?>
+</center>
+</body>
+</html>
